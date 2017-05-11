@@ -1,7 +1,62 @@
-$color: #CEA0E4;
-$color-dark: #A64DCB;
-$color-accent: #F9BF3B;
+#cover {
+  background-image: url('/background.jpg');
+  background-position: center;
+  background-size: 225%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  transition: transform 750ms ease-in-out;
 
-body {
-  background-color: $color;
+
+  @media (max-width: 800px) {
+    background-size: cover;
+  }
+}
+
+#cta {
+  margin-top: -1em;
+  font-family: 'Boogaloo', cursive;
+  font-size: 3em;
+  color: white;
+  border: none;
+  background: #F4D03F;
+  padding: 0.25em 1em;
+  border-radius: 0.1em;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.333);
+  outline: none;
+}
+
+h1 {
+  color: white;
+  font-family: 'Boogaloo', cursive;
+  margin-top: 1em;
+  font-size: 8em;
+  font-weight: normal;
+  text-align: center;
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.333);
+
+  @media (max-width: 800px) {
+    margin-top: 30vh;
+    font-size: 6em;
+  }
+}
+
+.shadow {
+  position: absolute;
+  background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.lift {
+  transform: translateY(-100%);
 }

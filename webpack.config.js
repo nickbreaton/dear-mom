@@ -6,8 +6,8 @@ module.exports = (env) => {
   return {
     devtool: env.dev ? 'source-map' : undefined,
     entry: [
-      resolve(__dirname, 'src/scripts/index.js'),
-      resolve(__dirname, 'src/styles/index.scss')
+      resolve(__dirname, 'src/styles/index.scss'),
+      resolve(__dirname, 'src/scripts/index.js')
     ],
     output: {
       filename: 'index.js',
