@@ -1,5 +1,6 @@
 @import 'cover';
 @import 'content';
+@import 'spinner';
 
 * {
   margin: 0;
@@ -15,45 +16,4 @@
 
 .lift {
   transform: translateY(-100%);
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-#spinner {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-
-  &::after {
-    content: '';
-    display: inline-block;
-    font-size: 2em;
-    width: 1em;
-    height: 1em;
-    animation: spin 1.5s linear infinite,
-               fadeIn 500ms linear;
-    border: 0.2em solid #777;
-    border-radius: 100%;
-    border-bottom-color: white;
-    margin-top: 33vh;
-  }
 }
