@@ -12,13 +12,14 @@ module.exports = (env) => {
     output: {
       filename: 'index.js',
       path: resolve(__dirname, 'dist'),
-      publicPath: '/'
+      publicPath: ''
     },
     module: {
       rules: [
         { test: /\.js$/, use: 'babel-loader', exclude: /node_modules/ },
         { test: /\.json$/, use: 'json-loader' },
-        { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] }
+        { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+        { test: /\.(jpg|jpeg|png|gif|svg)$/, use: 'file-loader' }
       ]
     },
     plugins: [
