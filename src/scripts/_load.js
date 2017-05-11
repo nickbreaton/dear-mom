@@ -7,4 +7,5 @@ image = image.replace(/[^A-Za-z]*$/, '');
 $('<img/>').attr('src', image).on('load', function () {
   $(this).remove();
   $('section').css('visibility', 'visible');
+  $('#spinner').css('display', 'none');
 });
