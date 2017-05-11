@@ -1,11 +1,14 @@
 import $ from 'jquery';
 
-let image = $('#cover').css('background-image');
-image = image.replace(/.*(?=http)/, '');
-image = image.replace(/[^A-Za-z]*$/, '');
-
-$('<img/>').attr('src', image).on('load', function () {
+$('<img/>').attr('src', './background.jpg').on('load', function () {
+  // remove listener to avoid memory leaks
   $(this).remove();
-  $('#cover').css('display', '');
+
+  // add the loaded image as the CSS background image
+  $('#cover')
+    .css('display', '')
+    .css('background-image', `url(${this.src})`);
+
+  // disable the spinner
   $('#spinner').css('display', 'none');
 });
