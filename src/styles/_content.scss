@@ -1,5 +1,8 @@
 #content {
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #content header {
@@ -20,4 +23,48 @@
 #content h2 {
   color: #C3C3C3;
   font-size: 2em;
+}
+
+#content main {
+  flex-grow: 1;
+}
+
+#content .lines {
+  margin: 2em 0;
+}
+
+#content .line {
+  width: 100%;
+  font-size: 1em;
+  height: 1em;
+  margin: 0.9em 0;
+
+  &::after {
+    content: '';
+    height: inherit;
+    display: inline-block;
+    background: #F1F2F2;
+  }
+  &:nth-child(1)::after {
+    width: calc(100% - 4em);
+    margin-left: 2em;
+  }
+  &:nth-child(2)::after {
+    width: calc(100% - 3em);
+  }
+  &:nth-child(3)::after {
+    width: calc(100% - 1em);
+  }
+  &:nth-child(4)::after {
+    width: calc(100% - 10em);
+  }
+}
+
+#content footer {
+  background: #F1F2F2;
+  padding: 1em 0;
+}
+
+#content footer .line::after {
+  background: white;
 }
