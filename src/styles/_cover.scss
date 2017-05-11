@@ -1,0 +1,57 @@
+#cover {
+  background-image: url('/background.jpg');
+  background-position: center;
+  background-size: 225%;
+  bottom: 0;
+  font-family: 'Boogaloo', cursive;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition: transform 750ms ease-in-out;
+
+  @media (max-width: 800px) {
+    background-size: cover;
+  }
+}
+
+#cover button {
+  background: #F4D03F;
+  border-radius: 0.1em;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.333);
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 3em;
+  margin-top: 0.5em;
+  outline: none;
+  padding: 0.25em 1em;
+}
+
+#cover h1 {
+  color: white;
+  font-size: 8em;
+  font-weight: normal;
+  margin-top: 1.5em;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.333);
+  width: 100%;
+
+  @media (max-width: 800px) {
+    margin-top: 30vh;
+    font-size: 6em;
+  }
+}
+
+#cover .shadow {
+  background: black;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}

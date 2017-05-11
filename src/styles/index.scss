@@ -1,60 +1,16 @@
-#cover {
-  background-image: url('/background.jpg');
-  background-position: center;
-  background-size: 225%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  transition: transform 750ms ease-in-out;
+@import 'cover';
+@import 'content';
 
-
-  @media (max-width: 800px) {
-    background-size: cover;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#cta {
-  margin-top: -1em;
-  font-family: 'Boogaloo', cursive;
-  font-size: 3em;
-  color: white;
-  border: none;
-  background: #F4D03F;
-  padding: 0.25em 1em;
-  border-radius: 0.1em;
-  cursor: pointer;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.333);
-  outline: none;
-}
-
-h1 {
-  color: white;
-  font-family: 'Boogaloo', cursive;
-  margin-top: 1em;
-  font-size: 8em;
-  font-weight: normal;
-  text-align: center;
-  width: 100%;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.333);
-
-  @media (max-width: 800px) {
-    margin-top: 30vh;
-    font-size: 6em;
-  }
-}
-
-.shadow {
-  position: absolute;
-  background: black;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  opacity: 0.3;
+.center {
+  max-width: 50em;
+  width: 90%;
+  margin: auto;
 }
 
 .lift {
