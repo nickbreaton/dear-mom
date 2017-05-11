@@ -1,6 +1,6 @@
-const { resolve } = require('path')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { resolve } = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env) => {
   return {
@@ -18,7 +18,7 @@ module.exports = (env) => {
       rules: [
         { test: /\.js$/, use: 'babel-loader', exclude: /node_modules/ },
         { test: /\.json$/, use: 'json-loader' },
-        { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+        { test: /\.scss$/, use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'] },
         { test: /\.(jpg|jpeg|png|gif|svg)$/, use: 'file-loader' }
       ]
     },
@@ -35,5 +35,5 @@ module.exports = (env) => {
         template: 'src/index.html'
       })
     ]
-  }
-}
+  };
+};
