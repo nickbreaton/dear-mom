@@ -8,6 +8,12 @@
   box-sizing: border-box;
 }
 
+.ie-fix {
+  // https://codepen.io/chriswrightdesign/pen/emQNGZ
+  display: flex;
+  flex-direction: row;
+}
+
 .center {
   max-width: 50em;
   width: 90%;
