@@ -5,6 +5,7 @@
   min-height: 100vh;
   width: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 #content header {
@@ -20,18 +21,20 @@
   font-size: 3em;
   margin-bottom: 0.25em;
   letter-spacing: 0.05em;
+  white-space: nowrap;
 
   @media (max-width: 500px) {
-    font-size: 2.6em;
+    font-size: 2.4em;
   }
 }
 
 #content h2 {
   color: #C3C3C3;
   font-size: 2em;
+  white-space: nowrap;
 
   @media (max-width: 500px) {
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
 }
 

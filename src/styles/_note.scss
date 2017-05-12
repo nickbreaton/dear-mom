@@ -3,7 +3,6 @@
   width: 20rem;
   background: radial-gradient(ellipse at center, #efead2, #ecdea1);
   transform: rotate(-3deg);
-  top: 12rem;
   box-shadow: 0 0 0.1rem 0.1rem rgba(0,0,0,0.2);
   display: flex;
   padding: 1.5rem;
@@ -11,9 +10,10 @@
   font-size: 1.75em;
   color: #9A947A;
   left: calc(50% - 10rem);
+  top: 12rem;
 
   @media (max-width: 500px) {
-    margin-top: 11rem;
+    top: 11rem;
   }
 
   &::before {
