@@ -1,0 +1,47 @@
+.note-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.note {
+  position: absolute;
+  width: 20rem;
+  background: radial-gradient(ellipse at center, #efead2, #ecdea1);
+  transform: rotate(-3deg);
+  margin-top: 12rem;
+  box-shadow: 0 0 0.1rem 0.1rem rgba(0,0,0,0.2);
+  display: flex;
+  padding: 1.5rem;
+  font-family: 'Boogaloo', cursive;
+  font-size: 1.75em;
+  color: #9A947A;
+
+  @media (max-width: 500px) {
+    margin-top: 11rem;
+  }
+
+  &::before {
+    position: absolute;
+    top: -1.5rem;
+    left: calc(50% - 5rem);
+    transform: rotate(4deg);
+    width: 10rem;
+    height: 3rem;
+    content: '';
+    background: radial-gradient(
+      ellipse at center,
+      rgba(235, 235, 235, 0.57),
+      rgba(255, 255, 255, 0.66)
+    );
+    box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.25);
+  }
+
+  &::after {
+    content: '';
+    padding-top: 100%;
+  }
+}

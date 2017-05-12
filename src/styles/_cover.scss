@@ -9,6 +9,7 @@
   text-align: center;
   top: 0;
   transition: transform 750ms ease-in-out;
+  z-index: 100;
 
   @media (max-width: 800px) {
     background-size: cover;
@@ -39,7 +40,7 @@
   width: 100%;
 
   @media (max-width: 800px) {
-    margin-top: 30vh;
+    margin-top: 1.25em;
     font-size: 6em;
   }
 }
