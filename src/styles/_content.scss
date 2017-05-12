@@ -19,15 +19,24 @@
   font-size: 3em;
   margin-bottom: 0.25em;
   letter-spacing: 0.05em;
+
+  @media (max-width: 500px) {
+    font-size: 2.6em;
+  }
 }
 
 #content h2 {
   color: #C3C3C3;
   font-size: 2em;
+
+  @media (max-width: 500px) {
+    font-size: 1.8em;
+  }
 }
 
 #content main {
   flex-grow: 1;
+  margin-bottom: 4em;
 }
 
 #content .lines {
