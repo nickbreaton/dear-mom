@@ -1,4 +1,6 @@
-A Mother's Day present for [my mom](https://github.com/TinaBreaton) who has recently taken an interest in web development.
+:gift_heart: A Mother's Day present for [my mom](https://github.com/TinaBreaton) who has recently taken an interest in web development.
+
+---
 
 | Command | Description |
 |---------|-------------|
